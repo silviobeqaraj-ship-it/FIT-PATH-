@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-display: "Space Grotesk", sans-serif;
+  
+  --color-accent: #BEF264;
+  --color-dark-bg: #0F1115;
+  --color-card-bg: #1A1D23;
+  --color-border-subtle: #1F2937;
+}
+
+@layer base {
+  body {
+    @apply bg-dark-bg text-gray-100 font-sans antialiased;
+  }
+}
+
+.bristol-grid {
+  background-image: radial-gradient(circle at 1px 1px, rgba(190, 242, 100, 0.05) 1px, transparent 0);
+  background-size: 32px 32px;
+}
